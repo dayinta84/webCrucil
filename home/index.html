@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crucil</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Crucil Landing Page</title>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- Navbar -->
     <header>
         <div class="logo">
-            <a href="index.html"><img src="./img/crucil-logo0.png" alt="Crucil Logo"></a>
+            <img src="img/crucil-logo0.png" alt="Crucil Logo">
         </div>
-        <nav class="menu">
+        <nav>
             <a href="index.html">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Crucil Shop</button>
@@ -30,76 +26,82 @@
             </div>
             <a href="orders.html">Pesanan</a>
         </nav>
-        <div class="search-icons">
-            <input type="text" placeholder="Cari Produk...">
+        <div class="cart-search">
+            <input type="text" placeholder="Cari Produk pilihanmu!">
             <a href="profile.html"><img src="img/profil0.png" alt="Profile"></a>
             <a href="cart.html"><img src="img/keranjang.png" alt="Cart"></a>
         </div>
     </header>
 
-    <!-- Video Banner -->
-    <section class="banner">
-        <video autoplay muted loop>
-            <source src="img/MONITOR TV SUNCITY VIDEO PRODUK.mp4" type="video/mp4">
-        </video>
-    </section>
-
-    <!-- Kategori Produk -->
-    <section class="categories">
-        <a href="newborn.html" class="category">
-            <img src="img/nb.png" alt="New Born">
-            <div class="overlay">New Born (0-3m)</div>
-        </a>
-        <a href="baby.html" class="category">
-            <img src="img/bb6.png" alt="Baby">
-            <div class="overlay">Baby (4m-2y)</div>
-        </a>
-        <a href="toddler.html" class="category">
+    <div class="content">
+        <section class="hero">
+            <video autoplay muted loop>
+                <source src="img/MONITOR TV SUNCITY VIDEO PRODUK.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section class="category-item">
+            <a href="Newborn.html">
+                <img src="img/nb.png" alt="Newborn">
+                <h2>New Born<br>0-3m</h2>
+            </a>
+        </section>        
+        <section class="category-item">
+            <a href="baby.html">
+            <img src="img/bb8.png" alt="Baby">
+            <h2>Baby<br>4m-2y</h2>
+            </a>
+        </section>
+        <section class="category-item">
+            <a href="toddlers.html">
             <img src="img/toddler.png" alt="Toddler">
-            <div class="overlay">Toddler (2y-5y)</div>
+            <h2>Toddler<br>2y-5y</h2>
         </a>
-        <a href="kids.html" class="category">
+        </section>
+        <section class="category-item">
+            <a href="kids.html">
             <img src="img/kids4.png" alt="Kids">
-            <div class="overlay">Kids (6y-8y)</div>
-        </a>
-        <a href="teen.html" class="category">
+            <h2>Kids<br>6y-9y</h2>
+            </a>
+        </section>
+        <section class="category-item">
+            <a href="Teenegers.html">
             <img src="img/teen4.png" alt="Teen">
-            <div class="overlay">Teen (9y-16y)</div>
+            <h2>Teen<br>9y-16y</h2>
         </a>
-        <a href="adult.html" class="category">
+
+        </section>
+        <section class="category-item">
+            <a href="adult.html">
             <img src="img/adult4.png" alt="Adult">
-            <div class="overlay">Adult (16+)</div>
-        </a>
+            <h2>Adult<br>16+</h2>
+            </a>
+
+        </section>
+    </div>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Free Shipping</h3>
+            <p>Gratis Ongkir ke seluruh Indonesia</p>
+        </div>
+        <div class="feature">
+            <h3>Secure Payment</h3>
+            <p>Jaminan 100% Keamanan Pembayaran</p>
+        </div>
+        <div class="feature">
+            <h3>Online Support</h3>
+            <p>Fast Respond Admin Crucil</p>
+        </div>
+        <div class="feature">
+            <h3>Flexible Payment</h3>
+            <p>Support Banyak Metode Pembayaran</p>
+        </div>
     </section>
 
-    <!-- Keunggulan -->
-    <section class="benefits">
-        <div class="benefit">
-            <img src="images/free-shipping.png" alt="Free Shipping">
-            <p>Free Shipping<br>Gratis Ongkir Seluruh Indonesia</p>
-        </div>
-        <div class="benefit">
-            <img src="images/secure-payment.png" alt="Secure Payment">
-            <p>Secure Payment<br>Pembayaran Aman</p>
-        </div>
-        <div class="benefit">
-            <img src="images/online-support.png" alt="Online Support">
-            <p>Online Support<br>Fast Respon Admin</p>
-        </div>
-        <div class="benefit">
-            <img src="images/flexible-payment.png" alt="Flexible Payment">
-            <p>Flexible Payment<br>Banyak Metode Pembayaran</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>Crucil Factory</p>
-        <p>Jl. Kura-kura No 20, Ngingas, Kec. Manggulah, Kota Madura, Jawa Timur 61382</p>
-        <p>Email: admin@crucilfactory.com | WA Admin: +62 822-2685-0147</p>
-        <p>&copy; 2025 Crucil Factory</p>
+        <p>&copy; 2025 Crucil Factory | Alamat: Jl. Kunir No 20, Kota Madiun</p>
+        <p>Email: admin@crucilfactory.com | WA Admin: +62 822-2055-0147</p>
     </footer>
-
 </body>
-
 </html>
