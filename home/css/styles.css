@@ -111,4 +111,63 @@ footer {
 
 .dropdown:hover .dropdown-content {
     display: block;
+<<<<<<< HEAD
+=======
+}
+
+.search-icons input {
+    padding: 5px;
+}
+
+.search-icons img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+/* Banner */
+.banner video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+/* Kategori */
+.categories {
+    /*display: flex;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0px;
+    width: auto;
+}
+
+.category {
+    position: relative;
+    margin: 10px;
+    margin-top: 0px;
+    width: auto;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 1px;
+    margin-top: 0px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+>>>>>>> 8c080df63899575392d5c9fc07ba32af2d9e1be4
 }
