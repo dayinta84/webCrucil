@@ -67,9 +67,9 @@ nav a,
 
 /* Kategori */
 .categories {
-    display: flex;
+    /*display: flex;*/
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 0px;
     width: auto;
 }
@@ -82,9 +82,8 @@ nav a,
 }
 
 .category img {
-    width: auto;
-    height: 350px;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 1px;
     margin-top: 0px;
 }
 
