@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+header .logo img {
+    width: 200px;
+    margin-right: 10px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+header nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    
+}
+.hero video, .category-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .cart-search {
+    display: flex;
+    align-items: center;
+}
+header .cart-search input {
+    padding: 10px 25px;
+    border: 1px solid #51519b;
+    border-radius: 20px;
+    outline: none;
+    /*margin-right: 40px;*/
+    background-color: transparent;
+}
+header .cart-search a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    margin-left: 10px;
+}
+/*.content {
+    margin-top: 80px;
+}*/
+.hero, .category-item {
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.hero img, .category-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+.category-item a{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+.category-item h2 {
+    position: absolute;
+    left: 50px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9b9a9a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+.feature {
+    text-align: center;
+} 
+
+.dropbtn {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
