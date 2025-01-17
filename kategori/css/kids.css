@@ -141,8 +141,9 @@ header .cart-search a {
 }
 
 .products {
-    max-width: 1200px;
-    margin: 40px;
+    width: 100%;
+    max-width: 1200px;/* Batas maksimal lebar konten */
+    margin: 40px auto;/* Konten di tengah */
     padding: 20px;
 }
 
