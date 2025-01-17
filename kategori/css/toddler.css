@@ -4,34 +4,160 @@ body {
     background-color: #f8f8f8;
 }
 header {
-    padding: 15px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+header .logo {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+header .logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
 header nav a {
-    margin-right: 15px;
+    margin: 0 25px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+
+}
+
+header .cart-search {
+    display: flex;
+    align-items: center;
+}
+
+header .cart-search input {
+    padding: 10px 25px;
+    border: 1px solid #51519b;
+    border-radius: 20px;
+    outline: none;
+    /*margin-right: 40px;*/
+    background-color: transparent;
+}
+
+header .cart-search a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tombol dropdown */
+.dropbtn {
+    margin: 0 10px;
     text-decoration: none;
     color: #333;
-    font-size: 1rem;
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /*gap: 5px;*/
+    position: relative;
 }
-header input[type="search"] {
-    padding: 5px 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+
+/* Segitiga (default ke atas) */
+.dropbtn::after {
+    content: '';
+    /* Segitiga */
+    border: 5px solid transparent;
+    border-top: 0;
+    border-bottom: 5px solid #333;
+    /* Segitiga ke atas */
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    /* Animasi perubahan orientasi */
 }
+
+/* Dropdown menu (tersembunyi secara default) */
+.dropdown-content {
+    display: none;
+    /* Default: sembunyi */
+    position: absolute;
+    top: 100%;
+    /* Di bawah tombol */
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Transparansi */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    z-index: 10;
+    display: none;
+    /* Menu horizontal */
+    gap: 10px;
+}
+
+/* Link dalam dropdown */
+.dropdown-content a {
+    padding: 5px 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    white-space: nowrap;
+    /* Mencegah teks terpotong */
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Efek hover */
+}
+
+/* Tampilkan dropdown dan ubah orientasi segitiga saat tombol aktif */
+.dropdown:focus-within .dropdown-content {
+    display: flex;
+    /* Tampilkan menu horizontal */
+}
+
+.dropdown:focus-within .dropbtn::after {
+    transform: rotate(180deg);
+    /* Segitiga ke bawah */
+}
+
 .products {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px;
     padding: 20px;
 }
+
 .products h1 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
+
+.products .subjudul {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 2px;
+}
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

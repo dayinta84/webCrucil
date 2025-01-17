@@ -20,7 +20,7 @@ header .logo {
     width: 100px;
 }
 header .logo img {
-    width: 200px;
+    width: 100px;
     margin-right: 10px;
 }
 header nav {
@@ -30,7 +30,7 @@ header nav {
 header nav a {
     margin: 0 25px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     color: #333;
     
 }
@@ -96,9 +96,61 @@ footer {
     background: #333;
     color: #fff;
 }
-.feature {
+/* Container utama fitur */
+.features {
+    padding: 40px 0;
+    background-color: #fffff;
     text-align: center;
-} 
+}
+
+/* Kotak fitur */
+.feature-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Setiap item fitur */
+.feature-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Efek hover */
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Ikon fitur */
+.feature-item img {
+    width: 60px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Judul fitur */
+.feature-item h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #004d40;
+    text-align: left;
+}
+
+/* Deskripsi fitur */
+.feature-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
 
 /* Dropdown container */
 .dropdown {
@@ -113,11 +165,11 @@ footer {
     color: #333;
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px;
+    /*gap: 5px;*/
     position: relative;
 }
 
@@ -148,10 +200,10 @@ footer {
 
 /* Link dalam dropdown */
 .dropdown-content a {
-    padding: 10px 20px;
+    padding: 5px 5px;
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 13px;
     white-space: nowrap; /* Mencegah teks terpotong */
 }
 
