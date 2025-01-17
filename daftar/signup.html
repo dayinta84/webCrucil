@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crucil - Daftar</title>
+    <link href="signup.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../home/img/Crucil-Logo.png" alt="Crucil Logo">
+        </div>
+        <nav>
+            <a href="../home/index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Crucil Shop</button>
+                <div class="dropdown-content">
+                    <a href="../kategori/Newborn.html">New Born</a>
+                    <a href="../kategori/baby.html">Baby</a>
+                    <a href="../kategori/toddler.html">Toddler</a>
+                    <a href="../kategori/kids.html">Kids</a>
+                    <a href="../kategori/teen.html">Teen</a>
+                    <a href="../kategori/adult.html">Adult</a>
+                </div>
+            </div>
+            <a href="../pesanan/order.html">Pesanan</a>
+        </nav>
+        <div class="cart-search">
+            <input type="text" placeholder="Cari Produk pilihanmu!">
+            <a href="profile.html"><img src="../home/img/profil0.png" alt="Profile"></a>
+            <a href="cart.html"><img src="../home/img/keranjang.png" alt="Cart"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <div class="left">
+                <img src="../home/img/Crucil-Logo.png" alt="Crucil Logo">
+            </div>
+            <div class="right">
+                <h2>DAFTAR</h2>
+                <form id="registerForm" class="reg">
+                    <div class="input-group">
+                        <input type="text" placeholder="Masukkan Nama Depan" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Masukkan Nama Belakang" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Masukkan Nama Pengguna" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Masukkan Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Masukkan Kata Sandi" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Ulangi Kata Sandi" required>
+                    </div>
+                    <button type="submit" class="btn">DAFTAR</button>
+                </form>
+                <div class="login-link">
+                    Sudah punya akun? <a href="#">Masuk disini</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="../home/img/Crucil-Logo.png" alt="Crucil Logo" class="footer-logo">
+                <p>Jl. Kunir No.20 Ngegong, Kec.<br>
+                    Manguharjo, Kota Madiun,<br>
+                    Jawa Timur 63126</p>
+            </div>
+    
+            <div class="footer-center">
+                <p>BLOG</p>
+                <div class="social-icons">
+                    <a href="#"><img src="../home/img/ig.jpg" alt="Instagram"></a>
+                    <a href="#"><img src="../home/img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../home/img/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+    
+            <div class="footer-right">
+                <p><img src="../home/img/email.png" alt="Email Icon"> Email : admin@crucilfactory.com</p>
+                <p><img src="../home/img/waf.png" alt="WhatsApp Icon"> Wa Admin : +62 822-2868-0147</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>Copyright 2024, <strong>PT Crucil Factory Indonesia</strong></p>
+            <p>Dilarang meniru atau menyalin segala hal yang berhubungan dengan brand Crucil</p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Pendaftaran berhasil!');
+        });
+    </script>
+</body>
+
+</html>
